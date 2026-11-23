@@ -1,0 +1,38 @@
+Telecomunicaciones 2 - Laboratorio 1
+Evidencia de terminal TelosB / RIOT 2026.04
+Fecha: 2026-11-07
+Puerto: /dev/ttyUSB0
+UART: 9600 bit/s
+
+Comando ejecutado:
+make BOARD=telosb PORT=/dev/ttyUSB0 term
+
+> help
+Command              Description
+---------------------------------------
+info                 Muestra informacion del laboratorio
+pm                   interact with layered PM subsystem
+version              Prints current RIOT_VERSION
+reboot               Reboot the node
+> info
+Telecomunicaciones 2 - Laboratorio 1
+Plataforma: TelosB / MSP430F1611
+LED0 -> LED1 -> LED2, periodo: 500 ms
+>
+
+Resultado de la compilacion limpia realizada previamente:
+
+text    data    bss     dec     hex
+15364   1138    1036    17538   4482
+
+Archivo generado:
+/home/aldop/telosb-lab/hello-led/bin/telosb/telosb_hello_led.elf
+
+Resultado final del flasheo:
+
+MSP430 Bootstrap Loader Version: 1.39-goodfet-8
+Current bootstrap loader version: 1.61 (Device ID: f16c)
+Changing baudrate to 38400 ...
+Program ...
+16502 bytes programmed.
+Reset device ...

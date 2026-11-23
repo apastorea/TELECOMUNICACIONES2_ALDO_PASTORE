@@ -1,0 +1,6 @@
+serie,distancia_m,csma,condicion,orientacion,canal,pan_id,intervalo_s,cantidad_objetivo,potencia_tx,firmware,anomalias
+A,0.5,ON,linea de vista,misma orientacion,26,0x0023,1,100,predeterminada,RIOT 2026.04,sin perdidas observadas
+B,3,ON,linea de vista,misma orientacion,26,0x0023,1,100,predeterminada,RIOT 2026.04,sin perdidas observadas
+C,3,OFF,linea de vista,misma orientacion,26,0x0023,1,100,predeterminada,RIOT 2026.04,120 perdidos de 131 esperados
+D-ON,3,ON,obstaculo controlado,misma orientacion,26,0x0023,1,110,predeterminada,RIOT 2026.04,108 perdidos; ventana verificada con log TX
+D-OFF,3,OFF,obstaculo controlado,misma orientacion,26,0x0023,1,110,predeterminada,RIOT 2026.04,106 perdidos; ventana verificada con log TX

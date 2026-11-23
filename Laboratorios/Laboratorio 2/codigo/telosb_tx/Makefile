@@ -1,0 +1,21 @@
+APPLICATION = telosb_tx
+BOARD ?= telosb
+RIOTBASE ?= $(CURDIR)/../..
+
+INCLUDES += -I$(APPDIR)
+
+USEMODULE += cc2420
+USEMODULE += test_utils_netdev_ieee802154_minimal
+USEMODULE += xtimer
+
+CFLAGS += -DEVENT_THREAD_STACKSIZE_DEFAULT=1024
+
+NODE_ID ?= 1
+DEST_ID ?= 2
+CSMA ?= 1
+
+CFLAGS += -DNODE_ID=$(NODE_ID)
+CFLAGS += -DDEST_ID=$(DEST_ID)
+CFLAGS += -DCSMA_ENABLED=$(CSMA)
+
+include $(RIOTBASE)/Makefile.include

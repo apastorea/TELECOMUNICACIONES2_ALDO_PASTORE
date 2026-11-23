@@ -1,0 +1,30 @@
+Laboratorio 2 - Configuración reproducible
+Fecha de medición: 2026-11-07
+
+Hardware
+- Plataforma: 2 x TelosB / MSP430F1611 / CC2420
+- TX: nodo 1, dirección corta 00:01
+- RX: nodo 2, dirección corta 00:02
+
+Radio IEEE 802.15.4
+- Canal: 26
+- PAN ID: 0x0023
+- Destino TX: 00:02
+- Intervalo nominal: 1 s
+- Carga útil: NODE=1 SEQ=s
+- Potencia TX: predeterminada del controlador
+
+Software
+- RIOT: 2026.04, commit 835e7a8b85
+- Estado RIOT: 2026.04-dirty por el parche documentado en patches/
+- Compilador: msp430-elf-gcc 9.3.1 (Mitto Systems 9.3.1.11)
+- Monitor serial: pyterm de RIOT, 9600 baudios
+
+Compilación y memoria
+- TX CSMA ON: text 26234, data 2484, bss 2352, flash 28718 bytes
+- TX CSMA OFF: text 26234, data 2486, bss 2352, flash 28720 bytes
+- RX: text 27496, data 2516, bss 2352, flash 30012 bytes
+
+Nota
+El parche de recepción agrega validación segura, extracción del payload y la
+línea normalizada RX node=n seq=s RSSI=r LQI=q requerida para el análisis.
