@@ -1,13 +1,30 @@
-# Telecomunicaciones 2 — Aldo Pastore
+# Telecomunicaciones 2 — Ingeniería Electrónica
 
-Repositorio académico de los laboratorios de **Telecomunicaciones 2**, carrera de **Ingeniería Electrónica**, Facultad de Ciencias y Tecnología, Universidad Católica «Nuestra Señora de la Asunción» (2026).
+Repositorio académico de **Aldo Pastore**, Facultad de Ciencias y Tecnología, Universidad Católica «Nuestra Señora de la Asunción» (Asunción, Paraguay).
 
-## Organización
+Reúne código fuente, configuraciones, informes y evidencias experimentales de las prácticas de **Telecomunicaciones 2 (2026)**, desarrolladas principalmente con RIOT OS y placas TelosB.
 
-Los códigos fuente, informes, evidencias y demás entregables están organizados en la carpeta [Laboratorios](./Laboratorios/):
+## Laboratorios
 
-- [Laboratorio 1](./Laboratorios/Laboratorio%201/): instalación de RIOT OS, Hello World, comunicación serie y control temporizado de LED en TelosB.
-- [Laboratorio 2](./Laboratorios/Laboratorio%202/): entregables correspondientes al segundo laboratorio.
-- [Laboratorio 3](./Laboratorios/Laboratorio%203/): comunicación multisalto IEEE 802.15.4 con nodos SENSOR, RELAY y SINK.
+| Práctica | Tema | Material |
+| --- | --- | --- |
+| [Laboratorio 1](./Laboratorios/Laboratorio%201/) | Entorno RIOT, Hello World, UART, shell y secuencia de LED temporizados | Código C, Makefile, informe, capturas y [video](https://youtu.be/YAHnWkMRIBE) |
+| [Laboratorio 2](./Laboratorios/Laboratorio%202/) | Enlace punto a punto IEEE 802.15.4: distancia, obstáculos, RSSI/LQI y CSMA | TX/RX, configuración, datos crudos, resultados e informe |
+| [Laboratorio 3](./Laboratorios/Laboratorio%203/) | Comunicación multisalto SENSOR → RELAY → SINK y control de reenvío con TTL | Tres aplicaciones, informe y evidencias |
 
-Cada laboratorio conserva su material de trabajo y su documentación técnica.
+**[Explorar los laboratorios](./Laboratorios/)**
+
+## Entorno de desarrollo
+
+- **Hardware:** TelosB con MSP430F1611 y transceptor CC2420.
+- **Software:** RIOT OS 2026.04 y compilador MSP430.
+- **Herramientas:** Ubuntu en WSL2, GoodFET BSL para grabación y pyterm para monitoreo UART.
+- **Temas:** IEEE 802.15.4, tramas MAC, CSMA/CCA, RSSI, LQI, seguimiento de secuencias y reenvío.
+
+Los procedimientos, parámetros, resultados y limitaciones se documentan en el README de cada laboratorio. Las mediciones corresponden a condiciones concretas y no deben extrapolarse como garantías generales de alcance o rendimiento.
+
+---
+
+**Autor:** Aldo Pastore  
+**Asignatura:** Telecomunicaciones 2 · Ingeniería Electrónica  
+**Institución:** Universidad Católica «Nuestra Señora de la Asunción»
