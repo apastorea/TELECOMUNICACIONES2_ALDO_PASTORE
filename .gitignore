@@ -1,0 +1,21 @@
+# Archivos temporales y metadatos locales
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.tmp
+*.bak
+
+# Archivos auxiliares LaTeX (conservar .tex y .pdf)
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.out
+
+# Cachés comunes
+__pycache__/
+*.pyc
+.venv/
